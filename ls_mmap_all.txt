@@ -1,0 +1,107 @@
+08:00:24 execve("/usr/bin/ls", ["ls", "-h"], 0x7fff27fa52f0 /* 57 vars */) = 0
+08:00:24 brk(NULL)                      = 0x563334c6e000
+08:00:24 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe921e33b0) = -1 EINVAL (Invalid argument)
+08:00:24 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+08:00:24 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+08:00:24 fstat(3, {st_mode=S_IFREG|0644, st_size=71316, ...}) = 0
+08:00:24 mmap(NULL, 71316, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3a90414000
+08:00:24 close(3)                       = 0
+08:00:24 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+08:00:24 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@p\0\0\0\0\0\0"..., 832) = 832
+08:00:24 fstat(3, {st_mode=S_IFREG|0644, st_size=163200, ...}) = 0
+08:00:24 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a90412000
+08:00:24 mmap(NULL, 174600, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3a903e7000
+08:00:24 mprotect(0x7f3a903ed000, 135168, PROT_NONE) = 0
+08:00:24 mmap(0x7f3a903ed000, 102400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f3a903ed000
+08:00:24 mmap(0x7f3a90406000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f3a90406000
+08:00:24 mmap(0x7f3a9040e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f3a9040e000
+08:00:24 mmap(0x7f3a90410000, 6664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3a90410000
+08:00:24 close(3)                       = 0
+08:00:24 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+08:00:24 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+08:00:24 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+08:00:24 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+08:00:24 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+08:00:24 fstat(3, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
+08:00:24 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+08:00:24 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+08:00:24 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+08:00:24 mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3a901f5000
+08:00:24 mprotect(0x7f3a9021a000, 1847296, PROT_NONE) = 0
+08:00:24 mmap(0x7f3a9021a000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7f3a9021a000
+08:00:24 mmap(0x7f3a90392000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7f3a90392000
+08:00:24 mmap(0x7f3a903dd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f3a903dd000
+08:00:24 mmap(0x7f3a903e3000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3a903e3000
+08:00:24 close(3)                       = 0
+08:00:24 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+08:00:24 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\"\0\0\0\0\0\0"..., 832) = 832
+08:00:24 fstat(3, {st_mode=S_IFREG|0644, st_size=584392, ...}) = 0
+08:00:24 mmap(NULL, 586536, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3a90165000
+08:00:24 mmap(0x7f3a90167000, 409600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f3a90167000
+08:00:24 mmap(0x7f3a901cb000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x66000) = 0x7f3a901cb000
+08:00:24 mmap(0x7f3a901f3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8d000) = 0x7f3a901f3000
+08:00:24 close(3)                       = 0
+08:00:24 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+08:00:24 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \22\0\0\0\0\0\0"..., 832) = 832
+08:00:24 fstat(3, {st_mode=S_IFREG|0644, st_size=18816, ...}) = 0
+08:00:24 mmap(NULL, 20752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3a9015f000
+08:00:24 mmap(0x7f3a90160000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f3a90160000
+08:00:24 mmap(0x7f3a90162000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f3a90162000
+08:00:24 mmap(0x7f3a90163000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f3a90163000
+08:00:24 close(3)                       = 0
+08:00:24 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+08:00:24 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\201\0\0\0\0\0\0"..., 832) = 832
+08:00:24 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\345Ga\367\265T\320\374\301V)Yf]\223\337"..., 68, 824) = 68
+08:00:24 fstat(3, {st_mode=S_IFREG|0755, st_size=157224, ...}) = 0
+08:00:24 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\345Ga\367\265T\320\374\301V)Yf]\223\337"..., 68, 824) = 68
+08:00:24 mmap(NULL, 140408, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3a9013c000
+08:00:24 mmap(0x7f3a90143000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f3a90143000
+08:00:24 mmap(0x7f3a90154000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f3a90154000
+08:00:24 mmap(0x7f3a90159000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x7f3a90159000
+08:00:24 mmap(0x7f3a9015b000, 13432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3a9015b000
+08:00:24 close(3)                       = 0
+08:00:24 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a9013a000
+08:00:24 arch_prctl(ARCH_SET_FS, 0x7f3a9013b400) = 0
+08:00:24 mprotect(0x7f3a903dd000, 12288, PROT_READ) = 0
+08:00:24 mprotect(0x7f3a90159000, 4096, PROT_READ) = 0
+08:00:24 mprotect(0x7f3a90163000, 4096, PROT_READ) = 0
+08:00:24 mprotect(0x7f3a901f3000, 4096, PROT_READ) = 0
+08:00:24 mprotect(0x7f3a9040e000, 4096, PROT_READ) = 0
+08:00:24 mprotect(0x563334392000, 4096, PROT_READ) = 0
+08:00:24 mprotect(0x7f3a90453000, 4096, PROT_READ) = 0
+08:00:24 munmap(0x7f3a90414000, 71316)  = 0
+08:00:24 set_tid_address(0x7f3a9013b6d0) = 2768
+08:00:24 set_robust_list(0x7f3a9013b6e0, 24) = 0
+08:00:24 rt_sigaction(SIGRTMIN, {sa_handler=0x7f3a90143bf0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f3a901513c0}, NULL, 8) = 0
+08:00:24 rt_sigaction(SIGRT_1, {sa_handler=0x7f3a90143c90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f3a901513c0}, NULL, 8) = 0
+08:00:24 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+08:00:24 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+08:00:24 statfs("/sys/fs/selinux", 0x7ffe921e3300) = -1 ENOENT (No such file or directory)
+08:00:24 statfs("/selinux", 0x7ffe921e3300) = -1 ENOENT (No such file or directory)
+08:00:24 brk(NULL)                      = 0x563334c6e000
+08:00:24 brk(0x563334c8f000)            = 0x563334c8f000
+08:00:24 openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+08:00:24 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+08:00:24 read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 369
+08:00:24 read(3, "", 1024)              = 0
+08:00:24 close(3)                       = 0
+08:00:24 access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+08:00:24 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+08:00:24 fstat(3, {st_mode=S_IFREG|0644, st_size=17430272, ...}) = 0
+08:00:24 mmap(NULL, 17430272, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3a8f09a000
+08:00:24 close(3)                       = 0
+08:00:24 ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+08:00:24 ioctl(1, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+08:00:24 openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+08:00:24 fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+08:00:24 getdents64(3, /* 15 entries */, 32768) = 496
+08:00:24 getdents64(3, /* 0 entries */, 32768) = 0
+08:00:24 close(3)                       = 0
+08:00:24 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+08:00:24 write(1, "df_mmap_result.txt  ls_mmap_all."..., 63) = 63
+08:00:24 write(1, "gcc_mmap_all.txt    ls_mmap_resu"..., 60) = 60
+08:00:24 write(1, "gcc_mmap.txt\t    output_file.txt"..., 56) = 56
+08:00:24 close(1)                       = 0
+08:00:24 close(2)                       = 0
+08:00:24 exit_group(0)                  = ?
+08:00:24 +++ exited with 0 +++
