@@ -1,1 +1,1 @@
-strace -t -o output_file.txt -e trace=mmap command_name -h
+strace -tt -o output_file.txt -e trace=mmap command_name -h
