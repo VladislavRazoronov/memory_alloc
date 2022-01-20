@@ -9,6 +9,8 @@ if __name__ == "__main__":
             "more_mmap.txt","ps_mmap.txt","rm_mmap.txt","writer_mmap.txt","python_mmap.txt"]
     for filename in files:
         data = {"Memory":[],"Time":[]}
+        flag_dict = dict()
+        protection = dict()
         begin_time = 0
         with open(filename) as file:
             for call in file:
@@ -28,6 +30,18 @@ if __name__ == "__main__":
                 data["Time"].append(time_status)
                 prot = args[2].split('|')
                 flags = args[3].split('|')
+                for it in prot:
+                    if it not in protection.keys():
+                        protection[it] = [mem_size,1]
+                    else:
+                        protection[it][0] += mem_size
+                        protection[it][1] += 1
+                for it in flags:
+                    if it not in flag_dict.keys():
+                        flag_dict[it] = [mem_size,1]
+                    else:
+                        flag_dict[it][0] += mem_size
+                        flag_dict[it][1] += 1
         dataframe = pd.DataFrame(data)
         plt.scatter(dataframe["Time"],dataframe["Memory"])
         plt.plot(dataframe["Time"],dataframe["Memory"])
@@ -38,3 +52,33 @@ if __name__ == "__main__":
         plt.ylabel("Used memory bit")
         plt.savefig("graphs/"+filename.split(".")[0]+".png")
         plt.clf()
+        label,values = [],[]
+        for lab, val in protection.items():
+            label.append(lab)
+            values.append(val)
+        count,size = [],[]
+        for value in values:
+            count.append(value[1])
+            size.append(value[0])
+        plt.bar(label,size)
+        plt.savefig("graphs/protection/"+filename.split(".")[0]+"prot_size.png")
+        plt.clf()
+        plt.bar(label,count)
+        plt.savefig("graphs/protection/"+filename.split(".")[0]+"prot_count.png")
+        plt.clf()
+        label,values = [],[]
+        for lab, val in flag_dict.items():
+            label.append(lab)
+            values.append(val)
+        count,size = [],[]
+        for value in values:
+            count.append(value[1])
+            size.append(value[0])
+        plt.bar(label,size)
+        plt.savefig("graphs/flags/"+filename.split(".")[0]+"flag_by_size.png")
+        plt.clf()
+        plt.bar(label,count)
+        plt.savefig("graphs/flags/"+filename.split(".")[0]+"flag_by_count.png")
+        plt.clf()
+        print(protection)
+        print(flag_dict)

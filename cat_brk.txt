@@ -1,0 +1,5 @@
+17:24:23.433504 brk(NULL)               = 0x556685e69000
+17:24:23.435019 brk(NULL)               = 0x556685e69000
+17:24:23.435097 brk(0x556685e8a000)     = 0x556685e8a000
+17:24:32.755775 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+17:24:32.756222 +++ killed by SIGINT +++

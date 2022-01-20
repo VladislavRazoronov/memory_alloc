@@ -1,0 +1,8 @@
+17:34:17.960554 brk(NULL)               = 0xe46000
+17:34:17.962068 brk(NULL)               = 0xe46000
+17:34:17.962244 brk(0xe67000)           = 0xe67000
+17:34:17.962426 brk(0xe8d000)           = 0xe8d000
+17:34:20.186751 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3620, si_uid=1000, si_status=0, si_utime=52, si_stime=8} ---
+17:34:20.196270 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3621, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+17:34:20.396718 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3622, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+17:34:20.397343 +++ exited with 0 +++

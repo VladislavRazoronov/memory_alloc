@@ -1,0 +1,10 @@
+17:29:41.755407 --- SIGSYS {si_signo=SIGSYS, si_code=SYS_SECCOMP, si_errno=ENOTDIR, si_call_addr=0x7f21a0432f24, si_syscall=__NR_openat, si_arch=AUDIT_ARCH_X86_64} ---
+17:29:41.756448 --- SIGSYS {si_signo=SIGSYS, si_code=SYS_SECCOMP, si_errno=ENOTDIR, si_call_addr=0x7f21a043865c, si_syscall=__NR_openat, si_arch=AUDIT_ARCH_X86_64} ---
+17:29:42.739571 --- SIGSYS {si_signo=SIGSYS, si_code=SYS_SECCOMP, si_errno=ENOTDIR, si_call_addr=0x7f21a087cad4, si_syscall=__NR_openat, si_arch=AUDIT_ARCH_X86_64} ---
+17:29:42.740609 --- SIGSYS {si_signo=SIGSYS, si_code=SYS_SECCOMP, si_errno=ENOTDIR, si_call_addr=0x7f21a087cad4, si_syscall=__NR_openat, si_arch=AUDIT_ARCH_X86_64} ---
+17:29:42.744303 --- SIGSYS {si_signo=SIGSYS, si_code=SYS_SECCOMP, si_errno=ENOTDIR, si_call_addr=0x7f21a087cad4, si_syscall=__NR_openat, si_arch=AUDIT_ARCH_X86_64} ---
+17:29:56.329594 --- SIGSYS {si_signo=SIGSYS, si_code=SYS_SECCOMP, si_errno=ENOTDIR, si_call_addr=0x7f21a0432f24, si_syscall=__NR_openat, si_arch=AUDIT_ARCH_X86_64} ---
+17:29:56.331593 --- SIGSYS {si_signo=SIGSYS, si_code=SYS_SECCOMP, si_errno=ENOTDIR, si_call_addr=0x7f21a043865c, si_syscall=__NR_openat, si_arch=AUDIT_ARCH_X86_64} ---
+17:30:06.288261 --- SIGSYS {si_signo=SIGSYS, si_code=SYS_SECCOMP, si_errno=ENOTDIR, si_call_addr=0x7f21a0432f24, si_syscall=__NR_openat, si_arch=AUDIT_ARCH_X86_64} ---
+17:30:06.288938 --- SIGSYS {si_signo=SIGSYS, si_code=SYS_SECCOMP, si_errno=ENOTDIR, si_call_addr=0x7f21a043865c, si_syscall=__NR_openat, si_arch=AUDIT_ARCH_X86_64} ---
+17:30:10.118602 +++ exited with 0 +++
